@@ -27,7 +27,7 @@ def world():
         links.append(item['url'])
         description.append(item['description'])
 
-    return render_template('news.html', articals = article,des = description, link = links ,time = current_time, starting_heading = "Get Latest News  From Every Corner of the World",
+    return render_template('index.html', articals = article,des = description, link = links ,time = current_time, starting_heading = "Get Latest News  From Every Corner of the World",
                            next_heading =  "Get updated with currect situation in the world. Stay connected with us")
 
 
@@ -53,7 +53,7 @@ def nation():
         description.append(item['description'])
 
 
-    return render_template('news.html', articals = article,des = description, link = links ,time = current_time, starting_heading = " Get Latest News and Updates with NewsDairy",
+    return render_template('index.html', articals = article,des = description, link = links ,time = current_time, starting_heading = " Get Latest News and Updates with NewsDairy",
                            next_heading = " Get updated with currect situation in the world. Stay connected with us")
 
 
@@ -73,7 +73,7 @@ def business():
         links.append(item['url'])
         description.append(item['description'])
 
-    return render_template('news.html', articals = article, des = description,link = links ,time = current_time, starting_heading = " Get Latest Buisness News With NewsDairy",
+    return render_template('index.html', articals = article, des = description,link = links ,time = current_time, starting_heading = " Get Latest Buisness News With NewsDairy",
                            next_heading = " Get updated with business news and what is going in the market")
 
 
@@ -94,7 +94,7 @@ def technology():
         description.append(item['description'])
 
 
-    return render_template('news.html', articals = article,des = description, link = links ,time = current_time, startin_heading = " Get Latest Technology News With NewsDairy",
+    return render_template('index.html', articals = article,des = description, link = links ,time = current_time, startin_heading = " Get Latest Technology News With NewsDairy",
                            next_heading = 'Get Updated with latest technology')
 
 @app.route("/entertainments")
@@ -114,7 +114,7 @@ def entertainments():
         description.append(item['description'])
 
 
-    return render_template('news.html', articals = article,des = description, link = links ,time = current_time, starting_heading = " Get Latest Entertainments News With NewsDairy",
+    return render_template('index.html', articals = article,des = description, link = links ,time = current_time, starting_heading = " Get Latest Entertainments News With NewsDairy",
                            next_heading = "Get Updated with latest movies and entertainment industry news ")
 
 
@@ -135,7 +135,7 @@ def sports():
         description.append(item['description'])
 
 
-    return render_template('news.html', articals = article, des = description,link = links ,time = current_time, starting_heading = " Get Latest Sports News With NewsDairy",
+    return render_template('index.html', articals = article, des = description,link = links ,time = current_time, starting_heading = " Get Latest Sports News With NewsDairy",
                            next_heading = "Get updated with criket, football and other sports news")
 
 
@@ -156,7 +156,7 @@ def science():
         description.append(item['description'])
 
 
-    return render_template('news.html', articals = article,des = description, link = links ,time = current_time,starting_heading = " Get Latest Scientific News With NewsDairy",
+    return render_template('index.html', articals = article,des = description, link = links ,time = current_time,starting_heading = " Get Latest Scientific News With NewsDairy",
                            next_heading = "Get updated with latest research and studies")
 
 
@@ -177,7 +177,7 @@ def health():
         description.append(item['description'])
 
 
-    return render_template('news.html', articals = article,des = description, link = links ,time = current_time, starting_heading = " Get Latest News Related to Health With NewsDairy",
+    return render_template('index.html', articals = article,des = description, link = links ,time = current_time, starting_heading = " Get Latest News Related to Health With NewsDairy",
                            next_heading="Get updated with coronavirus and its precautions. Stay Home and Stay Safe")
 
 
